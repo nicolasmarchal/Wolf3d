@@ -1,4 +1,3 @@
-
 CC		= gcc
 
 MINILIBX	= -L./minilibx/ -lmlx_$(HOSTTYPE) -L/usr/lib64/X11 -lXext -lX11
@@ -15,16 +14,18 @@ RM		= rm -f
 
 CFLAGS		= -Wall -Werror -Wextra -g3 -Iinclude -Iminilibx -Imy
 
-SRC		= main.c	\
-		put_list.c	\
-		do_wolf.c	\
-		put_img.c	\
-		draw_line.c	\
-		do_minimap.c	\
-		move.c		\
-		put_tab.c	\
-		draw_wolf.c	\
-		check_map.c
+PATHSRC		= ./srcs/
+
+SRC		= $(PATHSRC)main.c	\
+		$(PATHSRC)put_list.c	\
+		$(PATHSRC)do_wolf.c	\
+		$(PATHSRC)put_img.c	\
+		$(PATHSRC)draw_line.c	\
+		$(PATHSRC)do_minimap.c	\
+		$(PATHSRC)move.c	\
+		$(PATHSRC)put_tab.c	\
+		$(PATHSRC)draw_wolf.c	\
+		$(PATHSRC)check_map.c
 
 all: $(NAME)
 
