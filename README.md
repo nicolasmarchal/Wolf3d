@@ -2,6 +2,6 @@
 
 mini game based on raycasting method
 
-![alt tesxt][logo]
+![alt text][logo]
 
 [logo]: ./Screenshot.jpg
