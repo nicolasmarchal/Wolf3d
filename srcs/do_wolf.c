@@ -13,7 +13,6 @@ int	clear_img(t_env *e)
   mlx_put_image_to_window(e->mlx, e->win, e->img, 0, 0);
   return (0);
 }
-#include <stdio.h>
 
 int	gere_key(int keycode, t_env *e)
 {
